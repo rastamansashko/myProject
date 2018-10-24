@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Заняття 9 - Bootstrap</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+<!-- Навігація -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+    
+        <!-- "Логотип" та кнопка меню для мобільних екранів -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Магазин</a>
+        </div>
+
+        <!-- Меню з правого боку -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Навушники</a></li>
+                <li><a href="#">Комп'ютери</a></li>
+                <li><a href="#">Ручки</a></li>
+                <li><a href="#sideBarMenu">Бокове меню</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+<!-- Кінець навігації -->
+
+<!-- Основний контейнер -->
+<div class="container">
+
+    <!-- Баннерний блок -->
+    <!-- Замінити слайдером -->
+    <div class="jumbotron">
+        <h1>Магазин</h1>
+        <p>СуперМагазин</p>
+        <p><a href="#" class="btn btn-warning btn-lg">Вин магазин </a></p>
+    </div>
+    
+    <div class="row">
+        
+        <!-- Ліве меню -->
+        <div class="col-xs-12 col-sm-4 col-md-3" id="sideBarMenu">
+            <ul class="nav nav-pills nav-stacked">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+        </div>
+        
+        <!-- Блок з товарами -->
+        <!-- Замініть цифри на блоки з товарами -->
+        <div class="col-xs-12 col-sm-8 col-md-9">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    1
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    2
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    3
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    4
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    5
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    6
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class=" "><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">...</div>
+    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+  </div>
+
+</div>
+    <!-- Тут можна зробити блок з закладками (tabs) -->
+    
+</div>
+
+<!-- ПОТРІБНО ДОБАВИТИ "ПІДВАЛ"! -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
